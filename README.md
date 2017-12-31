@@ -1,7 +1,8 @@
 # Error handling in Go
 
-Read the first 3 links in the Resources section.  They summarize both the space
-of potential problems handling errors and offer the correct alternatives.
+Read the first 3 links in the [Resources](#resources) section.  They summarize
+both the space of potential problems handling errors and offer the correct
+alternatives.
 
 There are some Go libraries that are adding more context to errors on top of the
 default Go error system.  Being able to wrap errors and have stack traces can
@@ -52,6 +53,6 @@ The `-v` flag prints the name and execution time of each test in the package.
 
 # License
 
-Code in this repo is licensed under Apache License v2.0.
+Code in this repo is licensed under [Apache License v2.0](LICENSE).
 
 Copyright Alex Popescu 2016-2017
