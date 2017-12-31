@@ -41,3 +41,17 @@ go test -run /A=1    # For all top-level tests, run subtests matching "A=1".
 ```
 
 The `-v` flag prints the name and execution time of each test in the package.
+
+# TODO
+
+- [ ] Improve examples in `go_errors_test.go` to capture the lack of context of
+    Go errors
+- [ ] Add tests in `go_errors_test.go` to exemplify the usage of sentinel
+    errors, error types, and opaque errors
+- [ ] Can tests in `testing_test.go` to make them pass
+
+# License
+
+Code in this repo is licensed under Apache License v2.0.
+
+Copyright Alex Popescu 2016-2017
