@@ -61,8 +61,8 @@ func TestErrorsNew(t *testing.T) {
 }
 
 func TestWithStack(t *testing.T) {
-	err := createOrWrapError("root", nil)
-	err := newerr.WithStack(err)
+	_, err := createOrWrapError("root", nil)
+	err = newerr.WithStack(err)
 	wrappedErr, ok := err.(stackTracer)
 	assert.True(t, ok, "errors.New expected to return an error supporting StackTrace()")
 	assert.True(t, len(wrappedErr.StackTrace()) > 0, "errors.New stack trace expected > 0 found %d", len(wrappedErr.StackTrace()))
